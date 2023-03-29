@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.divisor {
+    width: 1px;
+    background: white;
+    margin: 12px 20px 12px 50px;
+}
+
+nav{
+    background-color: rgb(130, 10, 209);
+    
+}
+
+#nav-principal ul li a {
+    color: white;
+}
+
+#nav-principal ul li a:hover {
+    color: rgb(204, 204, 204);
+}
+
+#area-reserva {
+    background-color: rgb(130, 10, 300);
+}
