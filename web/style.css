@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
 .divisor {
@@ -11,7 +12,7 @@ html, body {
 
 nav{
     background-color: rgb(130, 10, 209);
-    
+
 }
 
 #nav-principal ul li a {
@@ -23,5 +24,84 @@ nav{
 }
 
 #area-reserva {
-    background-color: rgb(130, 10, 300);
+    background-color: #62089E;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0 ,0, 0.5);
+    color: white;
+    font-weight: bold;
 }
+
+.btn-reservar {
+    justify-content: center;
+    padding: 5px 10px;
+    margin: -10px 0px 0px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(240,54,255);
+    color: white;
+}
+
+.btn-reservar:hover{
+    background-color: rgb(244,113,255);
+    color:white;
+}
+
+footer{
+    background: #62089E;
+    color: white;
+    padding: 50px 0px 20px 0px;
+}
+
+footer h3{
+    font-size: 20px;
+    text-align: center; 
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+footer ul li {
+    list-style: none;
+    text-align: left;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color:white;
+}
+
+footer ul li a:hover{
+    color: rgb(204, 204, 204);
+    text-decoration: underline;
+}
+
+/*CARROSSEL*/
+
+#carrossel {
+    text-align: center;
+}
+
+.imgCarrossel{
+width: 100%;
+height: 500px;  
+object-fit: fill;
+}
+
+/*Propagandas*/
+#propaganda {
+    background: #f2f2f2;
+    align-items: center;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.iconePropa{
+    background: #62089E;
+    color: white;
+    border-radius: 50%;
+    padding: 11px;
+    box-sizing:initial  
+}
+
+
+
