@@ -82,17 +82,17 @@ footer ul li a:hover{
 }
 
 .imgCarrossel{
-width: 100%;
-height: 500px;  
-object-fit: fill;
+    width: 100%;
+    height: 500px;  
+    object-fit: fill;
 }
 
 /*Propagandas*/
-#propaganda {
-    background: #f2f2f2;
+.areaBranca{
+    background: #e8e8e8;
     align-items: center;
     margin: 0px auto;
-    padding: 20px;
+    padding: 60px;
 }
 
 .iconePropa{
@@ -103,5 +103,64 @@ object-fit: fill;
     box-sizing:initial  
 }
 
+/* PARCEIROS */
 
+.parceiros{
+    text-align: center;
+    background: #820ad1; 
 
+}   
+
+.parceiros h2 {
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.parceiros p {
+    color: white;
+    font-size: 25px;
+}
+
+.imgParceiros{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* APLICATIVO*/
+
+.AreaAplicativo{
+    background: #e8e8e8;
+    align-items: center;
+    margin: 0px auto;
+    padding: 60px 0px 0px 0px;
+}
+
+.img-aplicativo{
+    width: 350px;
+}
+
+.AreaAplicativo p {
+    color: black;
+    width: 75%;
+    padding: 50px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.AreaAplicativo h2 {
+    padding: 0px 50px;
+    margin-bottom: -30px;
+    color: #62089E;
+}
+
+.btn-download {
+    color:  white;
+    text-align: center;
+    background: #62089E;
+    width: 150px;
+    padding: 10px 5px;
+    margin-left: 50px;
+}
