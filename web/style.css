@@ -161,6 +161,45 @@ footer ul li a:hover{
     text-align: center;
     background: #62089E;
     width: 150px;
-    padding: 10px 5px;
+    padding: 10px 15px;
     margin-left: 50px;
+    display: inline;
+    border-radius: 3%;
+}
+
+/*============================
+            AJUDA
+==============================*/
+
+.titulo-ajuda {
+    text-align: center;
+    color: #383838;
+    font-weight: bolder;
+    font-size: 2.2rem;
+    margin-top: 50px;
+}
+
+.sutitulo-ajuda {
+    text-align: center;
+    color: #4a4a4a;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.titulo-topico-ajuda {
+    color: #62089E;
+    font-weight: bolder;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.sutitulo-topico-ajuda {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.texto-ajuda {
+    padding: 0px 10px;
+    margin-bottom: 25px; 
+    text-align: justify;
 }
