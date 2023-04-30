@@ -1,0 +1,131 @@
+.btn-oferta {
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0 ,0, 0.5);
+    color: rgb(130, 10, 209);
+    padding: 40px;
+    margin: 40px;
+}
+
+.btn-oferta:hover{
+    background-color: rgb(130, 10, 209);
+    color:white;
+}
+.btn-preco{
+    font-size: 30px;
+    color: black;
+}
+
+.btn-continuar-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-continuar{
+    justify-content: center;
+    padding: 10px 30px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(240,54,255);
+    color: white;
+}
+
+.btn-continuar:hover{
+    background-color: rgb(244,113,255);
+}
+
+.carousel-indicators .active{
+    background-color: rgb(244,113,255);
+}
+
+.coluna1{
+    margin: 20px 0 20px 0;
+    background-color: white;
+    border: 1px solid rgb(130, 10, 209);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0 ,0, 0.5);
+}
+
+
+.title-info{
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(130, 10, 209);
+}
+.subtitle-info{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.info{
+    color: rgba(0, 0, 0, 0.664);
+}
+
+.info-reserva {
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0 ,0, 0.5);
+}
+
+.title-resumo {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.664);
+    padding: 15px;
+}
+
+.resumo-reserva {
+    background-color: rgba(192, 192, 192, 0.466);
+    border-radius: 10px 10px 0 0;
+}
+
+.text{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+}
+
+.text-end{
+    background-color: rgb(130, 10, 209);
+    border-radius: 0 0 10px 10px;
+}
+.info-total{
+    color: rgb(244,113,255);
+    padding: 15px 15px 0 0;
+}
+
+.info-price{
+    padding: 0 15px 15px 0;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+
+
+.check-box{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid  rgb(130, 10, 209);
+    padding: 15px;
+}
+
+.check-box p{
+    margin: 0;
+    text-align: center;
+}
+
+.check p{
+    margin-right: 10px;
+}
+
+.title-protecao{
+    font-weight: 700;
+    color: rgb(130, 10, 209);
+    margin-left: 50px;
+}
+
+
+
+
+

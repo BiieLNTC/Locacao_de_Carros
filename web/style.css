@@ -11,7 +11,7 @@ html, body {
 }
 
 nav{
-    background-color: rgb(130, 10, 209);
+    background-color: #820ad1;
 
 }
 
@@ -43,7 +43,7 @@ nav{
 }
 
 .btn-reservar:hover{
-    background-color: rgb(244,113,255);
+    background-color: #f471ff;
     color:white;
 }
 

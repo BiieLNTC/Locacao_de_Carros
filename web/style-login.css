@@ -1,16 +1,3 @@
-.background{
-    width: 430px;
-    height: 520px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-}
-.background .shape{
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    border-radius: 50%;
-}
-
 form{
     height: 520px;
     width: 400px;
@@ -20,8 +7,26 @@ form{
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
-    margin: 70px auto;
+    margin: 70px auto 10px auto;
 }
+
+.area-login {
+    margin-bottom: 50px;
+}
+
+.area-login p {
+    text-align: center;
+}
+
+.area-login p a {
+    color: rgb(130, 10, 209);
+}
+
+.area-login p a:hover{
+    text-decoration: none;
+    color: rgb(240,54,255);
+}
+
 form *{
     font-family: 'Poppins',sans-serif;
     color: #ffffff;
@@ -46,7 +51,7 @@ input{
     display: block;
     height: 50px;
     width: 100%;
-    background-color: rgba(255,255,255,0.07);
+    background-color: hsla(276, 90%, 33%, 0.616);
     border-radius: 3px;
     padding: 0 10px;
     margin-top: 8px;
@@ -54,7 +59,7 @@ input{
     font-weight: 300;
 }
 ::placeholder{
-    color: #e5e5e5;
+    color: #ffffff;
 }
 button{
     margin-top: 50px;
@@ -64,10 +69,11 @@ button{
     padding: 15px 0;
     font-size: 18px;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: 5px!important;
     cursor: pointer;
 }
-.social{
-  margin-top: 30px;
-  display: flex;
+
+button:hover{
+    background-color: #e8e8e8;
+    transition: .3s;
 }
