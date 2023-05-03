@@ -203,3 +203,50 @@ footer ul li a:hover{
     margin-bottom: 25px; 
     text-align: justify;
 }
+
+/*
+====================
+      SOBRE NOS
+====================*/
+
+.about-section h1 {
+    color: #820ad1;
+    text-align: center;
+    padding: 50px;
+}
+
+.subtitulo-sobre {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #4a4a4a;
+}
+
+.div-visao{
+    background: linear-gradient(rgba(0,0,0,0.5), 
+                rgba(0,0,0,0.5)),
+                url("img/visao.jpg");
+    height: 400px;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0 ,0, 0.5);
+}
+
+.div-valores{
+        background: linear-gradient(rgba(0,0,0,0.5), 
+                rgba(0,0,0,0.5)),
+                url("img/valores.jpg");
+    height: 400px;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0 ,0, 0.5);
+    
+}
+
+.titulo-sobre{
+    margin: 30px ;
+    font-size: 40px;
+    color: white
+}
+
+.visao-valores p {
+    color: white;
+    font-size: 17px;
+}
