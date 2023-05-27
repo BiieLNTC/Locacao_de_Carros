@@ -1,0 +1,252 @@
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.divisor {
+    width: 1px;
+    background: white;
+    margin: 12px 20px 12px 50px;
+}
+
+nav{
+    background-color: #820ad1;
+
+}
+
+#nav-principal ul li a {
+    color: white;
+}
+
+#nav-principal ul li a:hover {
+    color: rgb(204, 204, 204);
+}
+
+#area-reserva {
+    background-color: #62089E;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0 ,0, 0.5);
+    color: white;
+    font-weight: bold;
+}
+
+.btn-reservar {
+    justify-content: center;
+    padding: 5px 10px;
+    margin: -10px 0px 0px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(240,54,255);
+    color: white;    
+}
+
+.btn-reservar:hover{
+    background-color: #f471ff;
+    color:white;
+}
+
+footer{
+    background: #62089E;
+    color: white;
+    padding: 50px 0px 20px 0px;
+}
+
+footer h3{
+    font-size: 20px;
+    text-align: center; 
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+footer ul li {
+    list-style: none;
+    text-align: left;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color:white;
+}
+
+footer ul li a:hover{
+    color: rgb(204, 204, 204);
+    text-decoration: underline;
+}
+
+/*CARROSSEL*/
+
+#carrossel {
+    text-align: center;
+}
+
+.imgCarrossel{
+    width: 100%;
+    height: 500px;  
+    object-fit: fill;
+}
+
+/*Propagandas*/
+.areaBranca{
+    background: #e8e8e8;
+    align-items: center;
+    margin: 0px auto;
+    padding: 60px;
+}
+
+.iconePropa{
+    background: #62089E;
+    color: white;
+    border-radius: 50%;
+    padding: 11px;
+    box-sizing:initial  
+}
+
+/* PARCEIROS */
+
+.parceiros{
+    text-align: center;
+    background: #820ad1; 
+
+}   
+
+.parceiros h2 {
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.parceiros p {
+    color: white;
+    font-size: 25px;
+}
+
+.imgParceiros{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* APLICATIVO*/
+
+.AreaAplicativo{
+    background: #e8e8e8;
+    align-items: center;
+    margin: 0px auto;
+    padding: 60px 0px 0px 0px;
+}
+
+.img-aplicativo{
+    width: 350px;
+}
+
+.AreaAplicativo p {
+    color: black;
+    width: 75%;
+    padding: 50px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.AreaAplicativo h2 {
+    padding: 0px 50px;
+    margin-bottom: -30px;
+    color: #62089E;
+}
+
+.btn-download {
+    color:  white;
+    text-align: center;
+    background: #62089E;
+    width: 150px;
+    padding: 10px 15px;
+    margin-left: 50px;
+    display: inline;
+    border-radius: 3%;
+}
+
+/*============================
+            AJUDA
+==============================*/
+
+.titulo-ajuda {
+    text-align: center;
+    color: #383838;
+    font-weight: bolder;
+    font-size: 2.2rem;
+    margin-top: 50px;
+}
+
+.sutitulo-ajuda {
+    text-align: center;
+    color: #4a4a4a;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.titulo-topico-ajuda {
+    color: #62089E;
+    font-weight: bolder;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.sutitulo-topico-ajuda {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.texto-ajuda {
+    padding: 0px 10px;
+    margin-bottom: 25px; 
+    text-align: justify;
+}
+
+/*
+====================
+      SOBRE NOS
+====================*/
+
+.about-section h1 {
+    color: #820ad1;
+    text-align: center;
+    padding: 50px;
+}
+
+.subtitulo-sobre {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #4a4a4a;
+}
+
+.div-visao{
+    background: linear-gradient(rgba(0,0,0,0.5), 
+                rgba(0,0,0,0.5)),
+                url("img/visao.jpg");
+    height: 400px;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0 ,0, 0.5);
+}
+
+.div-valores{
+        background: linear-gradient(rgba(0,0,0,0.5), 
+                rgba(0,0,0,0.5)),
+                url("img/valores.jpg");
+    height: 400px;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0 ,0, 0.5);
+    
+}
+
+.titulo-sobre{
+    margin: 30px ;
+    font-size: 40px;
+    color: white
+}
+
+.visao-valores p {
+    color: white;
+    font-size: 17px;
+}
