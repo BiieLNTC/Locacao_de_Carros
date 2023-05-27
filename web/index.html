@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NuCars Locação</title>
 
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="./Styles/style.css">
 </head>
 
 <body>
@@ -50,11 +52,66 @@
     </header>
     <div class="container">
         <div id="area-reserva">
-            <form class="form-inline" action="reserva.html">
+            <form class="form-inline" onchange="VerificaCamposPreenchidosReserva()" action="reserva.html">
                 <div class="row">
                     <div class="form-group col-4">
                         <label>Local de Retirada</label>
-                        <input type="text" class="form-control">
+                        <select class="form-select" id="local-retirada">
+                            <option selected></option>
+                            <option value="Guarulhos">Aeroporto Guarulhos - São Paulo - SP</option>
+                            <option value="Viracopos">Aeroporto Viracopos - Campinas - SP</option>
+                            <option value="Piracicaba">Agencia Piracicaba - SP</option>
+                            <option value="Ribeirão Preto">Agencia Ribeirão Preto - SP</option>
+                            <option value="Rio Claro">Agencia Rio Claro - SP</option>
+                            <option value="Leblon">Agencia Leblon - RJ</option>
+                            <option value="Curitiba">Agencia Curitiba - PR</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-3">
+                        <label>Data</label>
+                        <input type="date" class="form-control" id="data-retirada">
+                    </div>
+                    <div class="form-group col-3">
+                        <label>Hora</label>
+                        <select class="form-select" id="hora-retirada">
+                            <option selected></option>
+                            <option value="8:00">8:00</option>
+                            <option value="8:30">8:30</option>
+                            <option value="9:00">9:00</option>
+                            <option value="9:30">9:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mt-2" style="display: none;" id="area-devolucao">
+                    <div class="form-group col-4">
+                        <label>Local de Devolução</label>
+                        <select class="form-select"  id="local-devolucao">
+                            <option selected></option>
+                            <option value="Guarulhos">Aeroporto Guarulhos - São Paulo - SP</option>
+                            <option value="Viracopos">Aeroporto Viracopos - Campinas - SP</option>
+                            <option value="Piracicaba">Agencia Piracicaba - SP</option>
+                            <option value="Ribeirão Preto">Agencia Ribeirão Preto - SP</option>
+                            <option value="Rio Claro">Agencia Rio Claro - SP</option>
+                            <option value="Leblon">Agencia Leblon - RJ</option>
+                            <option value="Curitiba">Agencia Curitiba - PR</option>
+                        </select>
                     </div>
                     <div class="form-group col-3">
                         <label>Data</label>
@@ -62,74 +119,36 @@
                     </div>
                     <div class="form-group col-3">
                         <label>Hora</label>
-                        <select class="form-select" id="hora-retirada">
+                        <select class="form-select" id="hora-devolucao">
                             <option selected></option>
-                            <option value="">8:00</option>
-                            <option value="">8:30</option>
-                            <option value="">9:00</option>
-                            <option value="">9:30</option>
-                            <option value="">10:00</option>
-                            <option value="">10:30</option>
-                            <option value="">11:00</option>
-                            <option value="">11:30</option>
-                            <option value="">12:00</option>
-                            <option value="">12:30</option>
-                            <option value="">13:00</option>
-                            <option value="">13:30</option>
-                            <option value="">14:00</option>
-                            <option value="">14:30</option>
-                            <option value="">15:00</option>
-                            <option value="">15:30</option>
-                            <option value="">16:00</option>
-                            <option value="">16:30</option>
-                            <option value="">17:00</option>
-                            <option value="">17:30</option>
-                            <option value="">18:00</option>
+                            <option value="8:00">8:00</option>
+                            <option value="8:30">8:30</option>
+                            <option value="9:00">9:00</option>
+                            <option value="9:30">9:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
                         </select>
                     </div>
-                </div>
-                <form class="form-inline">
-                    <div class="row mt-2">
-                        <div class="form-group col-4">
-                            <label>Local de Devolução</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group col-3">
-                            <label>Data</label>
-                            <input type="date" class="form-control">
-                        </div>
-                        <div class="form-group col-3">
-                            <label>Hora</label>
-                            <select class="form-select" id="hora-devolucao">
-                                <option selected></option>
-                                <option value="">8:00</option>
-                                <option value="">8:30</option>
-                                <option value="">9:00</option>
-                                <option value="">9:30</option>
-                                <option value="">10:00</option>
-                                <option value="">10:30</option>
-                                <option value="">11:00</option>
-                                <option value="">11:30</option>
-                                <option value="">12:00</option>
-                                <option value="">12:30</option>
-                                <option value="">13:00</option>
-                                <option value="">13:30</option>
-                                <option value="">14:00</option>
-                                <option value="">14:30</option>
-                                <option value="">15:00</option>
-                                <option value="">15:30</option>
-                                <option value="">16:00</option>
-                                <option value="">16:30</option>
-                                <option value="">17:00</option>
-                                <option value="">17:30</option>
-                                <option value="">18:00</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-2">
-                            <button type="submit" class="btn btn-reservar">Reservar</button>
-                        </div>
+                    <div class="form-group col-2">
+                        <button type="submit" class="btn btn-reservar">Reservar</button>
                     </div>
-                </form>
+                </div>
+            </form>
         </div>
     </div>
     <div id="carrossel" class="carousel slide" data-bs-ride="carousel">
@@ -353,4 +372,23 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
+
+
+
+<script>
+    function VerificaCamposPreenchidosReserva(){
+    
+    var retirada = document.getElementById('local-retirada').value
+    var data = document.getElementById('data-retirada').value
+    var hora = document.getElementById('hora-retirada').value
+    var devolucao = document.querySelector('#area-devolucao')
+
+    console.log(retirada, data, hora, devolucao)
+
+    if(retirada != "" && data != null && hora != ""){
+        devolucao.style.display = ""
+    }
+}
+</script>
+
 </html

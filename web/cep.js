@@ -27,6 +27,14 @@ cepInput.addEventListener("keyup", (e) => {
   if (inputValue.length === 8) {
     getAddress(inputValue);
   }
+
+  if(inputValue.length === 0) {
+    addressInput.value = "";
+  cityInput.value = "";
+  neighborhoodInput.value ="";
+  complemento.value = "";
+  regionInput.value = "";
+  }
 });
 
 // pega o endereço na API
