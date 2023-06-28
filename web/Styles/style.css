@@ -224,7 +224,7 @@ footer ul li a:hover{
 .div-visao{
     background: linear-gradient(rgba(0,0,0,0.5), 
                 rgba(0,0,0,0.5)),
-                url("img/visao.jpg");
+                url("../img/visao.jpg");
     height: 400px;
     background-size: cover;
     box-shadow: 5px 5px 10px rgba(0, 0 ,0, 0.5);
@@ -233,7 +233,7 @@ footer ul li a:hover{
 .div-valores{
         background: linear-gradient(rgba(0,0,0,0.5), 
                 rgba(0,0,0,0.5)),
-                url("img/valores.jpg");
+                url("../img/valores.jpg");
     height: 400px;
     background-size: cover;
     box-shadow: 5px 5px 10px rgba(0, 0 ,0, 0.5);
